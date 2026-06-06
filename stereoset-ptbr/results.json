@@ -1,0 +1,218 @@
+{
+  "bertimbau_base": {
+    "intrasentence": {
+      "gender": {
+        "Count": 765,
+        "LM Score": 59.75,
+        "SS Score": 54.31,
+        "ICAT Score": 54.6
+      },
+      "profession": {
+        "Count": 2430,
+        "LM Score": 58.33,
+        "SS Score": 52.44,
+        "ICAT Score": 55.49
+      },
+      "race": {
+        "Count": 2886,
+        "LM Score": 61.11,
+        "SS Score": 47.36,
+        "ICAT Score": 57.88
+      },
+      "religion": {
+        "Count": 237,
+        "LM Score": 56.8,
+        "SS Score": 48.51,
+        "ICAT Score": 55.11
+      },
+      "overall": {
+        "Count": 2106,
+        "LM Score": 59.72,
+        "SS Score": 50.21,
+        "ICAT Score": 59.47
+      }
+    },
+    "intersentence": {
+      "gender": {
+        "Count": 726,
+        "LM Score": 62.87,
+        "SS Score": 57.2,
+        "ICAT Score": 53.81
+      },
+      "profession": {
+        "Count": 2481,
+        "LM Score": 56.86,
+        "SS Score": 49.06,
+        "ICAT Score": 55.79
+      },
+      "race": {
+        "Count": 2928,
+        "LM Score": 56.06,
+        "SS Score": 49.87,
+        "ICAT Score": 55.91
+      },
+      "religion": {
+        "Count": 234,
+        "LM Score": 63.76,
+        "SS Score": 50.57,
+        "ICAT Score": 63.03
+      },
+      "overall": {
+        "Count": 2123,
+        "LM Score": 57.52,
+        "SS Score": 50.52,
+        "ICAT Score": 56.92
+      }
+    },
+    "overall": {
+      "Count": 4229,
+      "LM Score": 58.57,
+      "SS Score": 50.44,
+      "ICAT Score": 58.05
+    }
+  },
+  "norberto_base": {
+    "intrasentence": {
+      "gender": {
+        "Count": 765,
+        "LM Score": 63.7,
+        "SS Score": 55.51,
+        "ICAT Score": 56.68
+      },
+      "profession": {
+        "Count": 2430,
+        "LM Score": 61.27,
+        "SS Score": 51.56,
+        "ICAT Score": 59.35
+      },
+      "race": {
+        "Count": 2886,
+        "LM Score": 62.3,
+        "SS Score": 41.19,
+        "ICAT Score": 51.31
+      },
+      "religion": {
+        "Count": 237,
+        "LM Score": 71.86,
+        "SS Score": 46.57,
+        "ICAT Score": 66.94
+      },
+      "overall": {
+        "Count": 2106,
+        "LM Score": 62.45,
+        "SS Score": 47.14,
+        "ICAT Score": 58.88
+      }
+    },
+    "intersentence": {
+      "gender": {
+        "Count": 726,
+        "LM Score": 60.37,
+        "SS Score": 53.04,
+        "ICAT Score": 56.71
+      },
+      "profession": {
+        "Count": 2481,
+        "LM Score": 54.46,
+        "SS Score": 51.12,
+        "ICAT Score": 53.24
+      },
+      "race": {
+        "Count": 2928,
+        "LM Score": 54.13,
+        "SS Score": 47.73,
+        "ICAT Score": 51.67
+      },
+      "religion": {
+        "Count": 234,
+        "LM Score": 59.25,
+        "SS Score": 53.18,
+        "ICAT Score": 55.48
+      },
+      "overall": {
+        "Count": 2123,
+        "LM Score": 55.24,
+        "SS Score": 49.9,
+        "ICAT Score": 55.13
+      }
+    },
+    "overall": {
+      "Count": 4229,
+      "LM Score": 58.78,
+      "SS Score": 48.62,
+      "ICAT Score": 57.16
+    }
+  },
+  "albertina_900m": {
+    "intrasentence": {
+      "gender": {
+        "Count": 765,
+        "LM Score": 57.98,
+        "SS Score": 48.42,
+        "ICAT Score": 56.14
+      },
+      "profession": {
+        "Count": 2430,
+        "LM Score": 54.48,
+        "SS Score": 50.23,
+        "ICAT Score": 54.23
+      },
+      "race": {
+        "Count": 2886,
+        "LM Score": 54.49,
+        "SS Score": 46.34,
+        "ICAT Score": 50.5
+      },
+      "religion": {
+        "Count": 237,
+        "LM Score": 58.51,
+        "SS Score": 45.61,
+        "ICAT Score": 53.37
+      },
+      "overall": {
+        "Count": 2106,
+        "LM Score": 55.08,
+        "SS Score": 48.05,
+        "ICAT Score": 52.93
+      }
+    },
+    "intersentence": {
+      "gender": {
+        "Count": 726,
+        "LM Score": 65.31,
+        "SS Score": 53.09,
+        "ICAT Score": 61.26
+      },
+      "profession": {
+        "Count": 2481,
+        "LM Score": 58.74,
+        "SS Score": 50.72,
+        "ICAT Score": 57.9
+      },
+      "race": {
+        "Count": 2928,
+        "LM Score": 64.96,
+        "SS Score": 46.04,
+        "ICAT Score": 59.82
+      },
+      "religion": {
+        "Count": 234,
+        "LM Score": 60.15,
+        "SS Score": 37.99,
+        "ICAT Score": 45.7
+      },
+      "overall": {
+        "Count": 2123,
+        "LM Score": 62.46,
+        "SS Score": 48.41,
+        "ICAT Score": 60.47
+      }
+    },
+    "overall": {
+      "Count": 4229,
+      "LM Score": 58.78,
+      "SS Score": 48.28,
+      "ICAT Score": 56.76
+    }
+  }
+}
