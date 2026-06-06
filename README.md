@@ -1,33 +1,57 @@
-# StereoSet pt-BR
+# StereoSet-PTBR
 
-Reprodução do benchmark [StereoSet](https://github.com/moinnadeem/stereoset) para modelos de linguagem em português, usando o dataset traduzido (`ptbr_llm.csv`).
+StereoSet-PTBR é uma adaptação do benchmark StereoSet para o português brasileiro, projetada para avaliar viés estereotípico em modelos de linguagem pré-treinados. O projeto inclui a tradução e conversão do dataset original, além de uma infraestrutura unificada para avaliação de modelos MLM (*Masked Language Models*) em português.
 
-## Estrutura
+O benchmark permite medir associações estereotípicas em diferentes grupos sociais por meio das métricas propostas por Nadeem et al. (2021): **Language Modeling Score (LM)**, **Stereotype Score (SS)** e **Idealized Context Association Test (ICAT)**.
 
-```
+## Objetivos
+
+* Adaptar o StereoSet para o português brasileiro.
+* Avaliar viés social em modelos de linguagem treinados para português.
+* Fornecer um pipeline reproduzível para comparação entre arquiteturas.
+* Servir como base para pesquisas em justiça algorítmica, viés e mitigação em modelos de linguagem.
+
+---
+
+## Estrutura do Projeto
+
+```text
 stereoset-ptbr/
-├── convert_csv_to_json.py   # Converte o CSV traduzido para JSON no formato StereoSet
-├── eval_model.py            # Avalia qualquer modelo MLM em português (MLM + PLL)
-├── evaluation.py            # Calcula LM Score, SS Score, ICAT Score
-├── dataloader.py            # Lê o JSON gerado
+├── convert_csv_to_json.py      # Converte o dataset traduzido para o formato StereoSet
+├── eval_model.py              # Avaliação de modelos MLM
+├── evaluation.py              # Cálculo das métricas LM, SS e ICAT
+├── dataloader.py              # Carregamento do dataset
 ├── requirements.txt
-└── data/
-    └── dev_ptbr.json        # Gerado por convert_csv_to_json.py
-└── predictions/
-    └── predictions_*.json   # Gerados por eval_model.py
+├── README.md
+│
+├── data/
+│   └── dev_ptbr.json          # Dataset no formato StereoSet
+│
+├── predictions/
+│   ├── predictions_*.json     # Predições geradas pelos modelos
+│
+├── results/
+│   └── results.json           # Resultados agregados
+│
+└── notebooks/
+    └── StereoSet-PTBR: Avaliação de Viés em Modelos de Linguagem para Português.ipynb   # Notebook de execução dos experimentos
 ```
 
-## Modelos suportados
+---
 
-| Modelo | ID HuggingFace | Arquitetura | token_type_ids |
-|--------|---------------|-------------|----------------|
-| BERTimbau base | `neuralmind/bert-base-portuguese-cased` | BERT | ✅ |
-| BERTimbau large | `neuralmind/bert-large-portuguese-cased` | BERT | ✅ |
-| Albertina | `PORTULAN/albertina-900m-portuguese-ptbr-encoder` | DeBERTa-v2 | ❌ |
-| NorBERTo base | `Itau-Unibanco/NorBERTo-base` | ModernBERT | ❌ |
-| NorBERTo large | `Itau-Unibanco/NorBERTo-large` | ModernBERT | ❌ |
+## Modelos Suportados
 
-O script detecta automaticamente a arquitetura via `model.config.type_vocab_size` e adapta o forward pass.
+O pipeline foi desenvolvido para funcionar com qualquer modelo compatível com `AutoModelForMaskedLM` da biblioteca Transformers.
+
+| Modelo              | Hugging Face ID                                   | Arquitetura |
+| ------------------- | ------------------------------------------------- | ----------- |
+| BERTimbau Base      | `neuralmind/bert-base-portuguese-cased`           | BERT        |
+| NorBERTo Base       | `Itau-Unibanco/NorBERTo-base`                     | ModernBERT  |
+| Albertina 900M PTBR | `PORTULAN/albertina-900m-portuguese-ptbr-encoder` | DeBERTa-v2  |
+
+O sistema detecta automaticamente características da arquitetura, como suporte a `token_type_ids`, permitindo a avaliação de diferentes famílias de modelos sem alterações no código.
+
+---
 
 ## Instalação
 
@@ -35,69 +59,96 @@ O script detecta automaticamente a arquitetura via `model.config.type_vocab_size
 pip install -r requirements.txt
 ```
 
-## Uso passo a passo
+---
 
-### 1. Converter o CSV para JSON
+## Fluxo Experimental
+
+### 1. Converter o Dataset
+
+Converta o dataset traduzido para o formato JSON compatível com o StereoSet.
 
 ```bash
 python convert_csv_to_json.py \
-    --input ../ptbr_llm.csv \
+    --input ptbr_llm.csv \
     --output data/dev_ptbr.json
 ```
 
-### 2. Avaliar os modelos
+### 2. Executar a Avaliação
 
-O script `eval_model.py` aceita qualquer modelo MLM em português. A arquitetura é detectada automaticamente.
+Exemplo utilizando o BERTimbau Base:
 
 ```bash
-# BERTimbau base
 python eval_model.py \
     --model neuralmind/bert-base-portuguese-cased \
     --data data/dev_ptbr.json \
     --output predictions/predictions_bertimbau_base.json
+```
 
-# Albertina
-python eval_model.py \
-    --model PORTULAN/albertina-900m-portuguese-ptbr-encoder \
-    --data data/dev_ptbr.json \
-    --output predictions/predictions_albertina.json
+Exemplo utilizando o NorBERTo:
 
-# NorBERTo base
+```bash
 python eval_model.py \
     --model Itau-Unibanco/NorBERTo-base \
     --data data/dev_ptbr.json \
     --output predictions/predictions_norberto_base.json
-
-# Somente intrasentence (mais rápido)
-python eval_model.py --model <id> --skip-intersentence ...
-
-# Sem GPU
-python eval_model.py --model <id> --no-cuda ...
 ```
 
-### 3. Calcular as métricas
+Exemplo utilizando a Albertina:
 
 ```bash
-# Um modelo específico
+python eval_model.py \
+    --model PORTULAN/albertina-100m-portuguese-ptbr-encoder \
+    --data data/dev_ptbr.json \
+    --output predictions/predictions_albertina_100m.json
+```
+
+Opções úteis:
+
+```bash
+# Avalia apenas exemplos intrassentenciais
+python eval_model.py --model <model_id> --skip-intersentence
+
+# Executa sem GPU
+python eval_model.py --model <model_id> --no-cuda
+```
+
+### 3. Calcular as Métricas
+
+Avaliar um único modelo:
+
+```bash
 python evaluation.py \
     --data data/dev_ptbr.json \
     --predictions predictions/predictions_bertimbau_base.json
+```
 
-# Todos os modelos em predictions/
+Avaliar todos os modelos disponíveis:
+
+```bash
 python evaluation.py \
     --data data/dev_ptbr.json \
     --predictions-dir predictions/ \
     --output results.json
 ```
 
+---
+
 ## Métricas
 
-| Métrica | Descrição | Valor ideal |
-|---------|-----------|-------------|
-| **LM Score** | % de vezes que o modelo prefere frases relacionadas às não-relacionadas | Alto (próximo de 100) |
-| **SS Score** | % de vezes que o modelo prefere o estereótipo ao anti-estereótipo | ~50 (sem viés) |
-| **ICAT Score** | Combinação: `LM × min(SS, 100-SS) / 50` | Alto (próximo de 100) |
+| Métrica        | Descrição                                                                                   | Valor Desejável |
+| -------------- | ------------------------------------------------------------------------------------------- | --------------- |
+| **LM Score**   | Capacidade do modelo de preferir sentenças semanticamente relacionadas às não relacionadas  | Alto            |
+| **SS Score**   | Tendência do modelo em preferir associações estereotipadas em relação às antiestereotipadas | Próximo de 50   |
+| **ICAT Score** | Combinação entre qualidade linguística e neutralidade                                       | Alto            |
+
+### Interpretação do SS Score
+
+* **50** → Sem preferência entre estereótipos e antiestereótipos.
+* **> 50** → Preferência por associações estereotipadas.
+* **< 50** → Preferência por associações antiestereotipadas.
+
+---
 
 ## Referência
 
-Nadeem et al. (2020). [StereoSet: Measuring stereotypical bias in pretrained language models](https://arxiv.org/abs/2004.09456).
+[StereoSet: Measuring stereotypical bias in pretrained language models](https://aclanthology.org/2021.acl-long.416/) (Nadeem et al., ACL-IJCNLP 2021)
