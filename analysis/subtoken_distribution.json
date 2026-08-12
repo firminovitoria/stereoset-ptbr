@@ -1,0 +1,68 @@
+{
+  "bertimbau_base": {
+    "n_exemplos": 6050,
+    "falhas_alinhamento": 268,
+    "media_subtokens": 2.058,
+    "max_subtokens": 24,
+    "pct_mais_de_1_subtoken": 64.91,
+    "histograma": {
+      "1": 2123,
+      "2": 2232,
+      "3": 1140,
+      "4": 416,
+      "5": 104,
+      "6": 24,
+      "7": 4,
+      "8": 1,
+      "9": 1,
+      "10": 2,
+      "14": 2,
+      "24": 1
+    }
+  },
+  "norberto_base": {
+    "n_exemplos": 5598,
+    "falhas_alinhamento": 720,
+    "media_subtokens": 2.018,
+    "max_subtokens": 28,
+    "pct_mais_de_1_subtoken": 53.64,
+    "histograma": {
+      "1": 2595,
+      "2": 1484,
+      "3": 864,
+      "4": 396,
+      "5": 141,
+      "6": 59,
+      "7": 27,
+      "8": 20,
+      "9": 4,
+      "10": 4,
+      "12": 1,
+      "13": 1,
+      "19": 1,
+      "28": 1
+    }
+  },
+  "albertina_900m": {
+    "n_exemplos": 5886,
+    "falhas_alinhamento": 432,
+    "media_subtokens": 2.55,
+    "max_subtokens": 21,
+    "pct_mais_de_1_subtoken": 80.05,
+    "histograma": {
+      "1": 1174,
+      "2": 2018,
+      "3": 1587,
+      "4": 729,
+      "5": 238,
+      "6": 92,
+      "7": 32,
+      "8": 7,
+      "9": 5,
+      "10": 1,
+      "11": 1,
+      "13": 1,
+      "21": 1
+    }
+  }
+}
