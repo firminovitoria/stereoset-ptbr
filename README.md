@@ -78,11 +78,16 @@ Nesta adaptação:
 
 ```text
 stereoset-ptbr/
-├── dev_ptbr.json
-├── predictions_*.json
-├── results.json
-├── subtoken_distribution.json
-├── stereoset-ptbr.ipynb│
+├── data/
+│   └── dev_ptbr.json
+├── predictions/
+│   └── predictions_*.json
+├── results/
+│   └── results.json
+├── analysis/
+│   └── subtoken_distribution.json
+├── notebooks/
+│   └── stereoset-ptbr.ipynb
 ├── analyze_subtokens.py
 ├── convert_csv_to_json.py
 ├── dataloader.py
