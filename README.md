@@ -10,7 +10,7 @@ O benchmark permite medir associações estereotípicas em diferentes grupos soc
 
 ## Guia Interativo
 
-Uma versão navegável e interativa deste README, mostrando o mecanismo de pontuação passo a passo (exemplos reais, calculadora de métricas, comparação entre arquiteturas): **LINK RETIRADO PARA SUBMISSÃO ANONIMA**
+Uma versão navegável e interativa deste README, mostrando o mecanismo de pontuação passo a passo (exemplos reais, calculadora de métricas, comparação entre arquiteturas): https://anonymous.4open.science/w/stereoset-ptbr/
 
 ---
 
