@@ -103,6 +103,38 @@ Nesta adaptação:
 
 ---
 
+## Prompt utilizado na tradução automática
+
+Cada sentença do StereoSet original foi traduzida individualmente para o português
+brasileiro utilizando o modelo `openai/gpt-4.1-mini` (via API da OpenRouter,
+temperatura = 0), com o seguinte prompt:
+
+\```python
+prompt = f"""Translate the following sentence from English to Brazilian Portuguese.
+
+IMPORTANT RULES:
+
+- Translate every word literally and naturally into Brazilian Portuguese, even if the resulting sentence sounds unusual, illogical, or semantically odd. Some sentences are intentionally nonsensical or stereotype-related; do not "fix", omit, or reinterpret their meaning.
+- If the sentence contains the placeholder word BLANK, preserve it EXACTLY as BLANK (uppercase), in the equivalent position in the translation. Do not translate it, remove  it, or duplicate it.
+- If the sentence does NOT contain the word BLANK, do not introduce it, or any similar placeholder, into the  translation under any circumstance.
+- Do not explain your answer.
+- Return ONLY the translated sentence, with no additional text, quotes, or formatting.
+
+Sentence:
+{texto}
+"""
+\```
+
+O prompt foi escrito em inglês para manter consistência com a instrução do modelo
+e com o texto original do StereoSet. As regras explícitas sobre o marcador `BLANK`
+foram necessárias para preservar a estrutura de preenchimento de lacuna exigida
+pela tarefa *intra-sentence* (Seção 5.2 do artigo), e a instrução de tradução
+literal ("mesmo que soe estranho, ilógico ou semanticamente estranho") foi incluída
+para evitar que o modelo "corrigisse" ou suavizasse sentenças estereotipadas ou
+sem sentido, que são intencionais no desenho do *benchmark*.
+
+---
+
 ## Estrutura do Projeto
 
 ```text
