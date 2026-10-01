@@ -1,0 +1,13 @@
+torch>=2.0.0
+transformers>=4.40.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Tokenizer SentencePiece: necessário para Albertina (DeBERTa-v2), XLM-R e
+# Manacá-1B. Sem isso, AutoTokenizer.from_pretrained falha nesses modelos.
+sentencepiece>=0.1.99
+
+# Necessários apenas para eval_autoregressive.py --load-in-8bit
+# (carregamento quantizado de modelos grandes, ex: Sabiá-7B, em GPUs com pouca VRAM)
+bitsandbytes>=0.43.0
+accelerate>=0.30.0

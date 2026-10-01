@@ -1,0 +1,323 @@
+{
+  "mbert_en": {
+    "intrasentence": {
+      "SS": {
+        "mean": 50.49,
+        "std": 11.45,
+        "n_terms": 79,
+        "CI95": [
+          48.01,
+          53.03
+        ]
+      },
+      "LM": {
+        "mean": 69.96,
+        "std": 8.26,
+        "n_terms": 79,
+        "CI95": [
+          68.08,
+          71.71
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 1322.0,
+        "p_value": 0.724095373065029,
+        "n": 74,
+        "p_adj_BH": 0.9537,
+        "significant_BH": false
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 39,
+        "n_neg": 35,
+        "n": 74,
+        "p_value": 0.7275470834894697,
+        "p_adj_BH": 0.8176,
+        "significant_BH": false
+      }
+    },
+    "intersentence": {
+      "SS": {
+        "mean": 49.66,
+        "std": 10.32,
+        "n_terms": 79,
+        "CI95": [
+          47.41,
+          51.84
+        ]
+      },
+      "LM": {
+        "mean": 62.4,
+        "std": 8.27,
+        "n_terms": 79,
+        "CI95": [
+          60.64,
+          64.17
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 1254.0,
+        "p_value": 0.8906048297647704,
+        "n": 71,
+        "p_adj_BH": 0.9537,
+        "significant_BH": false
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 37,
+        "n_neg": 34,
+        "n": 71,
+        "p_value": 0.8125886494061619,
+        "p_adj_BH": 0.8176,
+        "significant_BH": false
+      }
+    },
+    "overall": {
+      "SS": {
+        "mean": 50.1,
+        "std": 7.92,
+        "n_terms": 79,
+        "CI95": [
+          48.37,
+          51.76
+        ]
+      },
+      "LM": {
+        "mean": 66.19,
+        "std": 6.3,
+        "n_terms": 79,
+        "CI95": [
+          64.73,
+          67.66
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 1414.0,
+        "p_value": 0.9536784136705669,
+        "n": 75,
+        "p_adj_BH": 0.9537,
+        "significant_BH": false
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 36,
+        "n_neg": 39,
+        "n": 75,
+        "p_value": 0.8175538505509841,
+        "p_adj_BH": 0.8176,
+        "significant_BH": false
+      }
+    }
+  },
+  "xlmr_base_en": {
+    "intrasentence": {
+      "SS": {
+        "mean": 53.08,
+        "std": 11.87,
+        "n_terms": 79,
+        "CI95": [
+          50.48,
+          55.63
+        ]
+      },
+      "LM": {
+        "mean": 78.15,
+        "std": 7.44,
+        "n_terms": 79,
+        "CI95": [
+          76.5,
+          79.8
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 991.0,
+        "p_value": 0.06984753069759707,
+        "n": 72,
+        "p_adj_BH": 0.1257,
+        "significant_BH": false
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 42,
+        "n_neg": 30,
+        "n": 72,
+        "p_value": 0.1945051658673991,
+        "p_adj_BH": 0.3501,
+        "significant_BH": false
+      }
+    },
+    "intersentence": {
+      "SS": {
+        "mean": 47.48,
+        "std": 9.59,
+        "n_terms": 79,
+        "CI95": [
+          45.47,
+          49.54
+        ]
+      },
+      "LM": {
+        "mean": 52.24,
+        "std": 7.22,
+        "n_terms": 79,
+        "CI95": [
+          50.49,
+          53.79
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 942.0,
+        "p_value": 0.024662308068118984,
+        "n": 73,
+        "p_adj_BH": 0.0555,
+        "significant_BH": false
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 30,
+        "n_neg": 43,
+        "n": 73,
+        "p_value": 0.15971168311801956,
+        "p_adj_BH": 0.3501,
+        "significant_BH": false
+      }
+    },
+    "overall": {
+      "SS": {
+        "mean": 50.24,
+        "std": 8.64,
+        "n_terms": 79,
+        "CI95": [
+          48.43,
+          52.1
+        ]
+      },
+      "LM": {
+        "mean": 65.14,
+        "std": 5.97,
+        "n_terms": 79,
+        "CI95": [
+          63.85,
+          66.44
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 1360.5,
+        "p_value": 0.8843446843975257,
+        "n": 74,
+        "p_adj_BH": 0.9537,
+        "significant_BH": false
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 33,
+        "n_neg": 41,
+        "n": 74,
+        "p_value": 0.4159851975073046,
+        "p_adj_BH": 0.624,
+        "significant_BH": false
+      }
+    }
+  },
+  "bloom_1b7_en": {
+    "intrasentence": {
+      "SS": {
+        "mean": 59.62,
+        "std": 9.67,
+        "n_terms": 79,
+        "CI95": [
+          57.58,
+          61.73
+        ]
+      },
+      "LM": {
+        "mean": 81.7,
+        "std": 6.5,
+        "n_terms": 79,
+        "CI95": [
+          80.37,
+          83.06
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 198.5,
+        "p_value": 9.325100752075072e-11,
+        "n": 75,
+        "p_adj_BH": 0.0,
+        "significant_BH": true
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 63,
+        "n_neg": 12,
+        "n": 75,
+        "p_value": 1.693839376410126e-09,
+        "p_adj_BH": 0.0,
+        "significant_BH": true
+      }
+    },
+    "intersentence": {
+      "SS": {
+        "mean": 55.3,
+        "std": 10.25,
+        "n_terms": 79,
+        "CI95": [
+          53.02,
+          57.59
+        ]
+      },
+      "LM": {
+        "mean": 74.86,
+        "std": 6.6,
+        "n_terms": 79,
+        "CI95": [
+          73.39,
+          76.27
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 629.0,
+        "p_value": 7.255788405495327e-05,
+        "n": 73,
+        "p_adj_BH": 0.0002,
+        "significant_BH": true
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 48,
+        "n_neg": 25,
+        "n": 73,
+        "p_value": 0.009542211425865477,
+        "p_adj_BH": 0.0286,
+        "significant_BH": true
+      }
+    },
+    "overall": {
+      "SS": {
+        "mean": 57.42,
+        "std": 7.55,
+        "n_terms": 79,
+        "CI95": [
+          55.89,
+          59.07
+        ]
+      },
+      "LM": {
+        "mean": 78.31,
+        "std": 4.45,
+        "n_terms": 79,
+        "CI95": [
+          77.3,
+          79.2
+        ]
+      },
+      "SS_vs_chance_wilcoxon": {
+        "statistic": 245.0,
+        "p_value": 1.0976975766993183e-10,
+        "n": 78,
+        "p_adj_BH": 0.0,
+        "significant_BH": true
+      },
+      "SS_vs_chance_sign_test": {
+        "n_pos": 66,
+        "n_neg": 12,
+        "n": 78,
+        "p_value": 3.485851300097458e-10,
+        "p_adj_BH": 0.0,
+        "significant_BH": true
+      }
+    }
+  }
+}

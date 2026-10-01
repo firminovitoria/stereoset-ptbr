@@ -1,0 +1,852 @@
+{
+  "bertimbau_base": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 6.573843865397619,
+        "p_value": 0.0867953361359331,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 2,
+            "pro": 8
+          },
+          "profession": {
+            "anti": 15,
+            "pro": 14
+          },
+          "race": {
+            "pro": 26,
+            "anti": 8
+          },
+          "religion": {
+            "pro": 2,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 80.0,
+          "profession": 48.28,
+          "race": 76.47,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.6944,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 1.345870849964417,
+        "p_value": 0.7182704687779735,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 3,
+            "pro": 6
+          },
+          "profession": {
+            "pro": 13,
+            "anti": 14
+          },
+          "race": {
+            "pro": 18,
+            "anti": 17
+          },
+          "religion": {
+            "anti": 2,
+            "pro": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 66.67,
+          "profession": 48.15,
+          "race": 51.43,
+          "religion": 33.33
+        },
+        "p_adj_BH": 0.8627,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 7.626112134024368,
+        "p_value": 0.0544051141099589,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 2,
+            "pro": 7
+          },
+          "profession": {
+            "anti": 16,
+            "pro": 14
+          },
+          "race": {
+            "pro": 25,
+            "anti": 7
+          },
+          "religion": {
+            "pro": 1,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 77.78,
+          "profession": 46.67,
+          "race": 78.12,
+          "religion": 50.0
+        },
+        "p_adj_BH": 0.6944,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "albertina_900m": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 1.8808450264332617,
+        "p_value": 0.5975020945924088,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 8,
+            "anti": 1
+          },
+          "profession": {
+            "pro": 17,
+            "anti": 9
+          },
+          "race": {
+            "anti": 9,
+            "pro": 24
+          },
+          "religion": {
+            "pro": 2,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 88.89,
+          "profession": 65.38,
+          "race": 72.73,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 4.358420484181133,
+        "p_value": 0.22527187948625388,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 4,
+            "pro": 6
+          },
+          "profession": {
+            "pro": 15,
+            "anti": 14
+          },
+          "race": {
+            "pro": 12,
+            "anti": 22
+          },
+          "religion": {
+            "anti": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 60.0,
+          "profession": 51.72,
+          "race": 35.29,
+          "religion": 0.0
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 0.2957459207459207,
+        "p_value": 0.9608265622800215,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 2,
+            "pro": 5
+          },
+          "profession": {
+            "pro": 17,
+            "anti": 11
+          },
+          "race": {
+            "anti": 12,
+            "pro": 20
+          },
+          "religion": {
+            "pro": 2,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 71.43,
+          "profession": 60.71,
+          "race": 62.5,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.9728,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "norberto_base": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 2.148200709965416,
+        "p_value": 0.542223142808665,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 3,
+            "pro": 7
+          },
+          "profession": {
+            "anti": 7,
+            "pro": 20
+          },
+          "race": {
+            "pro": 24,
+            "anti": 10
+          },
+          "religion": {
+            "anti": 2,
+            "pro": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 70.0,
+          "profession": 74.07,
+          "race": 70.59,
+          "religion": 33.33
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 3.233164454806313,
+        "p_value": 0.357053757591651,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 6,
+            "anti": 4
+          },
+          "profession": {
+            "pro": 15,
+            "anti": 15
+          },
+          "race": {
+            "anti": 21,
+            "pro": 11
+          },
+          "religion": {
+            "anti": 1,
+            "pro": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 60.0,
+          "profession": 50.0,
+          "race": 34.38,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 1.969512569918249,
+        "p_value": 0.5787585367950885,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 3,
+            "pro": 6
+          },
+          "profession": {
+            "anti": 8,
+            "pro": 21
+          },
+          "race": {
+            "pro": 23,
+            "anti": 10
+          },
+          "religion": {
+            "pro": 1,
+            "anti": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 66.67,
+          "profession": 72.41,
+          "race": 69.7,
+          "religion": 33.33
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "mbert": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 4.753365539452496,
+        "p_value": 0.19077375226895765,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 8,
+            "anti": 1
+          },
+          "profession": {
+            "pro": 19,
+            "anti": 11
+          },
+          "race": {
+            "pro": 17,
+            "anti": 17
+          },
+          "religion": {
+            "pro": 2,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 88.89,
+          "profession": 63.33,
+          "race": 50.0,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 0.22888321995464883,
+        "p_value": 0.9727971389082183,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 6,
+            "pro": 4
+          },
+          "profession": {
+            "pro": 11,
+            "anti": 17
+          },
+          "race": {
+            "pro": 12,
+            "anti": 23
+          },
+          "religion": {
+            "anti": 2,
+            "pro": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 40.0,
+          "profession": 39.29,
+          "race": 34.29,
+          "religion": 33.33
+        },
+        "p_adj_BH": 0.9728,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 2.100466329037756,
+        "p_value": 0.5518184275598697,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 4,
+            "pro": 5
+          },
+          "profession": {
+            "pro": 17,
+            "anti": 11
+          },
+          "race": {
+            "pro": 14,
+            "anti": 19
+          },
+          "religion": {
+            "anti": 1,
+            "pro": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 55.56,
+          "profession": 60.71,
+          "race": 42.42,
+          "religion": 50.0
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "xlmr_base": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 2.5525742633035757,
+        "p_value": 0.4658646156913311,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 5,
+            "pro": 4
+          },
+          "profession": {
+            "pro": 20,
+            "anti": 8
+          },
+          "race": {
+            "pro": 22,
+            "anti": 9
+          },
+          "religion": {
+            "pro": 2,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 44.44,
+          "profession": 71.43,
+          "race": 70.97,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 1.3431711896228018,
+        "p_value": 0.7189080623448452,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 6,
+            "anti": 4
+          },
+          "profession": {
+            "pro": 12,
+            "anti": 15
+          },
+          "race": {
+            "pro": 17,
+            "anti": 14
+          },
+          "religion": {
+            "pro": 1,
+            "anti": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 60.0,
+          "profession": 44.44,
+          "race": 54.84,
+          "religion": 33.33
+        },
+        "p_adj_BH": 0.8627,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 3.571428571428572,
+        "p_value": 0.3116155523686133,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 5,
+            "pro": 5
+          },
+          "profession": {
+            "anti": 14,
+            "pro": 14
+          },
+          "race": {
+            "pro": 25,
+            "anti": 10
+          },
+          "religion": {
+            "anti": 1,
+            "pro": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 50.0,
+          "profession": 50.0,
+          "race": 71.43,
+          "religion": 50.0
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "tucano_1b1": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 6.924803995239241,
+        "p_value": 0.07433353925921928,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 7
+          },
+          "profession": {
+            "pro": 22,
+            "anti": 7
+          },
+          "race": {
+            "pro": 29,
+            "anti": 5
+          },
+          "religion": {
+            "pro": 1,
+            "anti": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 100.0,
+          "profession": 75.86,
+          "race": 85.29,
+          "religion": 33.33
+        },
+        "p_adj_BH": 0.6944,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 1.5319865319865325,
+        "p_value": 0.674907774337876,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 8,
+            "anti": 2
+          },
+          "profession": {
+            "pro": 16,
+            "anti": 11
+          },
+          "race": {
+            "pro": 18,
+            "anti": 12
+          },
+          "religion": {
+            "anti": 1,
+            "pro": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 80.0,
+          "profession": 59.26,
+          "race": 60.0,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8627,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 1.8221525898494986,
+        "p_value": 0.6101261900206874,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 9,
+            "anti": 1
+          },
+          "profession": {
+            "anti": 8,
+            "pro": 20
+          },
+          "race": {
+            "pro": 28,
+            "anti": 7
+          },
+          "religion": {
+            "pro": 2,
+            "anti": 1
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 90.0,
+          "profession": 71.43,
+          "race": 80.0,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "manaca_1b": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 2.862337662337662,
+        "p_value": 0.413340566896062,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 9,
+            "anti": 1
+          },
+          "profession": {
+            "pro": 22,
+            "anti": 6
+          },
+          "race": {
+            "pro": 32,
+            "anti": 3
+          },
+          "religion": {
+            "pro": 3
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 90.0,
+          "profession": 78.57,
+          "race": 91.43,
+          "religion": 100.0
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 0.31084207645398565,
+        "p_value": 0.9579766472702755,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 6,
+            "anti": 4
+          },
+          "profession": {
+            "pro": 18,
+            "anti": 11
+          },
+          "race": {
+            "pro": 21,
+            "anti": 10
+          },
+          "religion": {
+            "anti": 1,
+            "pro": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 60.0,
+          "profession": 62.07,
+          "race": 67.74,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.9728,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 2.1246728930298913,
+        "p_value": 0.5469374185129856,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 9,
+            "anti": 1
+          },
+          "profession": {
+            "pro": 22,
+            "anti": 7
+          },
+          "race": {
+            "pro": 29,
+            "anti": 5
+          },
+          "religion": {
+            "pro": 3
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 90.0,
+          "profession": 75.86,
+          "race": 85.29,
+          "religion": 100.0
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  },
+  "bloom_1b7": {
+    "intrasentence": {
+      "omnibus_chi2": {
+        "chi2": 1.1275452488687783,
+        "p_value": 0.7704290545474728,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "anti": 1,
+            "pro": 8
+          },
+          "profession": {
+            "pro": 24,
+            "anti": 2
+          },
+          "race": {
+            "pro": 29,
+            "anti": 5
+          },
+          "religion": {
+            "pro": 3
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 88.89,
+          "profession": 92.31,
+          "race": 85.29,
+          "religion": 100.0
+        },
+        "p_adj_BH": 0.8805,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "intersentence": {
+      "omnibus_chi2": {
+        "chi2": 3.3071193243236254,
+        "p_value": 0.3466529958820053,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 8,
+            "anti": 2
+          },
+          "profession": {
+            "pro": 16,
+            "anti": 11
+          },
+          "race": {
+            "pro": 16,
+            "anti": 17
+          },
+          "religion": {
+            "anti": 1,
+            "pro": 2
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 80.0,
+          "profession": 59.26,
+          "race": 48.48,
+          "religion": 66.67
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    },
+    "overall": {
+      "omnibus_chi2": {
+        "chi2": 2.0093676814988286,
+        "p_value": 0.570464685517726,
+        "dof": 3,
+        "low_expected_cell_warning": true,
+        "counts": {
+          "gender": {
+            "pro": 9,
+            "anti": 1
+          },
+          "profession": {
+            "anti": 7,
+            "pro": 23
+          },
+          "race": {
+            "pro": 26,
+            "anti": 9
+          },
+          "religion": {
+            "pro": 3
+          }
+        },
+        "pct_estereotipada": {
+          "gender": 90.0,
+          "profession": 76.67,
+          "race": 74.29,
+          "religion": 100.0
+        },
+        "p_adj_BH": 0.8614,
+        "significant_BH": false
+      },
+      "pairwise_fisher": null
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "intrasentence": {
+    "n_modelos": 8,
+    "spearman_rho": 0.7857,
+    "spearman_p": 0.0208,
+    "pearson_r": 0.8338,
+    "pearson_p": 0.0101,
+    "pontos": {
+      "bertimbau_base": {
+        "LM": 76.4,
+        "SS": 55.14
+      },
+      "albertina_900m": {
+        "LM": 75.43,
+        "SS": 56.99
+      },
+      "norberto_base": {
+        "LM": 77.54,
+        "SS": 56.22
+      },
+      "mbert": {
+        "LM": 66.48,
+        "SS": 52.09
+      },
+      "xlmr_base": {
+        "LM": 71.32,
+        "SS": 53.72
+      },
+      "tucano_1b1": {
+        "LM": 74.24,
+        "SS": 59.07
+      },
+      "manaca_1b": {
+        "LM": 81.31,
+        "SS": 61.92
+      },
+      "bloom_1b7": {
+        "LM": 77.79,
+        "SS": 60.15
+      }
+    }
+  },
+  "intersentence": {
+    "n_modelos": 8,
+    "spearman_rho": 0.5476,
+    "spearman_p": 0.16,
+    "pearson_r": 0.7383,
+    "pearson_p": 0.0365,
+    "pontos": {
+      "bertimbau_base": {
+        "LM": 57.55,
+        "SS": 50.11
+      },
+      "albertina_900m": {
+        "LM": 63.32,
+        "SS": 48.59
+      },
+      "norberto_base": {
+        "LM": 55.63,
+        "SS": 49.86
+      },
+      "mbert": {
+        "LM": 62.54,
+        "SS": 47.54
+      },
+      "xlmr_base": {
+        "LM": 55.81,
+        "SS": 49.08
+      },
+      "tucano_1b1": {
+        "LM": 70.98,
+        "SS": 53.83
+      },
+      "manaca_1b": {
+        "LM": 73.33,
+        "SS": 53.03
+      },
+      "bloom_1b7": {
+        "LM": 71.41,
+        "SS": 52.21
+      }
+    }
+  },
+  "overall": {
+    "n_modelos": 8,
+    "spearman_rho": 0.881,
+    "spearman_p": 0.0039,
+    "pearson_r": 0.9463,
+    "pearson_p": 0.0004,
+    "pontos": {
+      "bertimbau_base": {
+        "LM": 66.9,
+        "SS": 52.59
+      },
+      "albertina_900m": {
+        "LM": 69.31,
+        "SS": 52.78
+      },
+      "norberto_base": {
+        "LM": 66.47,
+        "SS": 53.1
+      },
+      "mbert": {
+        "LM": 64.47,
+        "SS": 49.84
+      },
+      "xlmr_base": {
+        "LM": 63.48,
+        "SS": 51.36
+      },
+      "tucano_1b1": {
+        "LM": 72.54,
+        "SS": 56.4
+      },
+      "manaca_1b": {
+        "LM": 77.27,
+        "SS": 57.41
+      },
+      "bloom_1b7": {
+        "LM": 74.53,
+        "SS": 56.12
+      }
+    }
+  }
+}
